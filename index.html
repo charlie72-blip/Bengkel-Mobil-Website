@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ProAuto - Bengkel profesional dengan teknisi bersertifikat, proses transparan, dan layanan cepat untuk kendaraan Anda.">
+    <meta name="keywords" content="bengkel, servis mobil, perawatan mobil, booking bengkel jakarta">
+    <meta name="theme-color" content="#0f2c3b">
     <title>ProAuto - Bengkel Profesional & Terpercaya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-SfTiTlX6kk+qB2+gU3CZCMXG2sSCAQTnLh3HZeJj2CNgQAEQVX4CB6SQce5In1K1Z55uavgamT1o9RbledCMyg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-    <!-- Top Info Bar -->
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="top-bar-item">
@@ -21,20 +26,19 @@
             </div>
             <div class="top-bar-item">
                 <i class="fas fa-clock"></i>
-                <span>Senin - Jumat: 08:00 - 18:00</span>
+                <span>Senin - Sabtu: 08:00 - 18:00</span>
             </div>
         </div>
     </div>
 
-    <!-- Sticky Navbar -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="container navbar-content">
-            <div class="logo">
+            <a class="logo" href="#home">
                 <i class="fas fa-tools"></i>
                 <span>ProAuto</span>
-            </div>
-            
-            <button class="hamburger" id="hamburger">
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -44,234 +48,309 @@
                 <li><a href="#home" class="nav-link">Beranda</a></li>
                 <li><a href="#services" class="nav-link">Layanan</a></li>
                 <li><a href="#why-us" class="nav-link">Keunggulan</a></li>
+                <li><a href="#gallery" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
                 <li><a href="#booking" class="nav-link">Booking</a></li>
-                <li><a href="#location" class="nav-link">Lokasi</a></li>
                 <li><a href="#contact" class="nav-link">Kontak</a></li>
             </ul>
 
-            <a href="#booking" class="btn-book-nav">Pesan Layanan</a>
+            <a href="#booking" class="btn-book-nav">Booking Sekarang</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-left">
-                <div class="hero-badge">
-                    <span>✓ Trusted Auto Workshop</span>
-                </div>
-                
-                <h1 class="hero-title">
-                    Servis Mobil <span class="hero-highlight">Profesional</span> & Terpercaya
-                </h1>
-                
+    <header id="home" class="hero">
+        <img src="asda.webp" alt="Teknisi ProAuto melakukan servis kendaraan" class="hero-bg" fetchpriority="high">
+        <div class="hero-mask"></div>
+        <div class="container hero-grid">
+            <div class="hero-content" data-reveal>
+                <p class="hero-eyebrow">Bengkel Mobil Semarang</p>
+                <h1 class="hero-title">Servis yang rapi, cepat, dan transparan untuk mobil harian Anda.</h1>
                 <p class="hero-description">
-                    Layanan perbaikan dan perawatan kendaraan berkualitas tinggi dengan teknisi bersertifikat. 
-                    Kami berkomitmen memberikan pelayanan terbaik untuk kendaraan Anda.
+                    Dari servis berkala sampai perbaikan mendalam, semua dikerjakan oleh teknisi bersertifikat
+                    dengan estimasi biaya yang jelas sebelum pengerjaan dimulai.
                 </p>
-                
-                <div class="hero-buttons">
-                    <a href="#booking" class="btn btn-primary btn-lg">
-                        <i class="fas fa-check-circle"></i>
-                        Pesan Layanan Sekarang
-                    </a>
-                    <a href="#services" class="btn btn-secondary btn-lg">
-                        <i class="fas fa-arrow-right"></i>
-                        Lihat Layanan
-                    </a>
+                <div class="hero-actions">
+                    <a href="#booking" class="btn btn-primary">Booking Sekarang</a>
+                    <a href="https://wa.me/6282112345678" class="btn btn-outline-light" target="_blank" rel="noopener">Konsultasi WhatsApp</a>
                 </div>
+                <ul class="hero-proof">
+                    <li>
+                        <strong>12+</strong>
+                        <span>Tahun pengalaman</span>
+                    </li>
+                    <li>
+                        <strong>5.000+</strong>
+                        <span>Kendaraan ditangani</span>
+                    </li>
+                    <li>
+                        <strong>4.9/5</strong>
+                        <span>Rata-rata rating</span>
+                    </li>
+                </ul>
             </div>
-            
-            <div class="hero-right">
-                <div class="hero-gradient-shape"></div>
-                <div class="hero-image-wrapper">
-                    <div class="hero-image">
-                        <img src="asda.webp" alt="Professional car service" class="hero-img-content">
-                    </div>
-                </div>
-                
-                <div class="floating-card floating-card-1">
-                    <i class="fas fa-certificate"></i>
-                    <span>Certified Mechanics</span>
-                </div>
-                
-                <div class="floating-card floating-card-2">
-                    <i class="fas fa-headset"></i>
-                    <span>24/7 Support</span>
+
+            <aside class="hero-panel" data-reveal>
+                <h2>Alur Booking 2 Menit</h2>
+                <p>Pilih layanan, pilih jam, lalu tim kami konfirmasi detail pengerjaan lewat WhatsApp.</p>
+                <ul class="hero-checklist">
+                    <li><i class="fas fa-circle-check"></i><span>Konfirmasi jadwal kurang dari 10 menit</span></li>
+                    <li><i class="fas fa-circle-check"></i><span>Estimasi biaya sebelum servis dimulai</span></li>
+                    <li><i class="fas fa-circle-check"></i><span>Garansi pengerjaan untuk layanan inti</span></li>
+                </ul>
+                <a href="#booking" class="btn btn-ghost-light">Pilih Jadwal Servis</a>
+            </aside>
+        </div>
+    </header>
+
+    <section id="services" class="services section-shell">
+        <div class="container">
+            <div class="section-heading" data-reveal>
+                <p class="section-kicker">Layanan Inti</p>
+                <h2 class="section-title">Fokus pada servis yang paling sering dibutuhkan pemilik mobil</h2>
+                <p class="section-subtitle">Kami sengaja menampilkan layanan paling relevan agar Anda cepat memilih, tanpa harus menelusuri daftar panjang yang membingungkan.</p>
+            </div>
+
+            <div class="service-showcase">
+                <figure class="service-photo" data-reveal>
+                    <img src="servis-di-bengkel-resmi-honda-baea.jpg" alt="Area kerja teknisi ProAuto" loading="lazy">
+                    <figcaption>Ruang kerja rapi, alat lengkap, dan SOP pemeriksaan berlapis.</figcaption>
+                </figure>
+
+                <div class="service-list">
+                    <article class="service-card service-row" data-reveal>
+                        <span class="service-index">01</span>
+                        <div>
+                            <h3>Servis Berkala Mesin</h3>
+                            <p>Pemeriksaan menyeluruh, penggantian part aus, dan penyetelan performa mesin.</p>
+                        </div>
+                        <span class="service-meta">90 Menit</span>
+                    </article>
+
+                    <article class="service-card service-row" data-reveal>
+                        <span class="service-index">02</span>
+                        <div>
+                            <h3>Ganti Oli & Filter</h3>
+                            <p>Gunakan oli sesuai spek pabrikan dengan proses pengurasan yang bersih.</p>
+                        </div>
+                        <span class="service-meta">45 Menit</span>
+                    </article>
+
+                    <article class="service-card service-row" data-reveal>
+                        <span class="service-index">03</span>
+                        <div>
+                            <h3>Rem, Kaki-kaki, dan Ban</h3>
+                            <p>Deteksi dini bunyi, getaran, atau rem tidak pakem untuk mencegah risiko di jalan.</p>
+                        </div>
+                        <span class="service-meta">75 Menit</span>
+                    </article>
+
+                    <article class="service-card service-row" data-reveal>
+                        <span class="service-index">04</span>
+                        <div>
+                            <h3>Diagnostik Scanner</h3>
+                            <p>Pembacaan error code dan rekomendasi tindakan prioritas sesuai kondisi kendaraan.</p>
+                        </div>
+                        <span class="service-meta">60 Menit</span>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="why-us" class="why-us section-shell">
         <div class="container">
-            <h2 class="section-title">Layanan Kami</h2>
-            <p class="section-subtitle">Kami menyediakan berbagai layanan perawatan kendaraan profesional</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <h3>Servis Mesin</h3>
-                    <p>Pemeriksaan menyeluruh dan perawatan mesin kendaraan Anda dengan standar internasional</p>
+            <div class="why-frame">
+                <div class="why-intro" data-reveal>
+                    <p class="section-kicker section-kicker-light">Kenapa ProAuto</p>
+                    <h2 class="section-title light">Bukan sekadar cepat, tapi hasilnya bisa dipertanggungjawabkan.</h2>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-droplet"></i>
-                    </div>
-                    <h3>Ganti Oli</h3>
-                    <p>Penggantian oli berkualitas premium dengan produk terpercaya dan sistem terbaru</p>
-                </div>
+                <div class="why-us-grid">
+                    <article class="why-us-card" data-reveal>
+                        <i class="fas fa-file-invoice"></i>
+                        <h3>Diagnosa Jelas</h3>
+                        <p>Anda terima ringkasan kondisi dan prioritas perbaikan sebelum kami mulai kerja.</p>
+                    </article>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-circle-stop"></i>
-                    </div>
-                    <h3>Perbaikan Rem</h3>
-                    <p>Servis sistem pengereman lengkap untuk keselamatan berkendara Anda</p>
-                </div>
+                    <article class="why-us-card" data-reveal>
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Teknisi Bersertifikat</h3>
+                        <p>Tim kami terbiasa menangani kendaraan harian, fleet kantor, sampai mobil premium.</p>
+                    </article>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h3>Servis AC</h3>
-                    <p>Perawatan dan perbaikan AC kendaraan untuk kenyamanan perjalanan Anda</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-ring"></i>
-                    </div>
-                    <h3>Penggantian Ban</h3>
-                    <p>Penggantian dan balancing ban dengan produk berkualitas tinggi</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <h3>Inspeksi Umum</h3>
-                    <p>Pemeriksaan menyeluruh kendaraan untuk memastikan semua sistem berfungsi optimal</p>
+                    <article class="why-us-card" data-reveal>
+                        <i class="fas fa-shield-halved"></i>
+                        <h3>Garansi Pengerjaan</h3>
+                        <p>Layanan utama memiliki garansi agar Anda lebih tenang setelah servis.</p>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="why-us" class="why-us">
+    <section id="gallery" class="gallery section-shell">
         <div class="container">
-            <h2 class="section-title">Mengapa Memilih Kami</h2>
-            
-            <div class="why-us-grid">
-                <div class="why-us-card">
-                    <div class="why-us-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Teknisi Bersertifikat</h3>
-                    <p>Tim teknisi berpengalaman dengan sertifikasi internasional dan pelatihan berkelanjutan</p>
-                </div>
+            <div class="section-heading" data-reveal>
+                <p class="section-kicker">Portfolio</p>
+                <h2 class="section-title">Beberapa momen pengerjaan di workshop kami</h2>
+            </div>
 
-                <div class="why-us-card">
-                    <div class="why-us-icon">
-                        <i class="fas fa-tag"></i>
+            <div class="gallery-grid">
+                <article class="gallery-item wide" data-reveal>
+                    <img src="c.jpg" alt="Teknisi memeriksa kendaraan di area servis" class="gallery-photo pos-1" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>General Checkup</h3>
+                        <p>Pemeriksaan awal 32 titik kondisi kendaraan.</p>
                     </div>
-                    <h3>Harga Terjangkau</h3>
-                    <p>Layanan berkualitas dengan harga kompetitif dan transparan tanpa biaya tersembunyi</p>
-                </div>
+                </article>
 
-                <div class="why-us-card">
-                    <div class="why-us-icon">
-                        <i class="fas fa-bolt"></i>
+                <article class="gallery-item tall" data-reveal>
+                    <img src="asda.webp" alt="Proses pemeriksaan kaki-kaki kendaraan" class="gallery-photo pos-2" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>Kaki-kaki & Rem</h3>
+                        <p>Diagnosis bunyi, getaran, dan ketebalan kampas.</p>
                     </div>
-                    <h3>Cepat & Terpercaya</h3>
-                    <p>Perbaikan cepat dengan hasil sempurna dan garansi kepuasan pelanggan 100%</p>
-                </div>
+                </article>
+
+                <article class="gallery-item medium" data-reveal>
+                    <img src="5ec7764e7a702.jpg" alt="Teknisi melakukan servis mesin" class="gallery-photo pos-3" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>Servis Berkala</h3>
+                        <p>Paket perawatan rutin sesuai kilometer.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item long" data-reveal>
+                    <img src="budha-toyota-patna-budha-toyota-02.jpg" alt="Area workshop ProAuto" class="gallery-photo pos-4" loading="lazy">
+                    <div class="gallery-caption">
+                        <h3>Workshop Bersih</h3>
+                        <p>Area kerja tertata agar proses servis lebih presisi.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
+    <section id="testimonials" class="testimonials section-shell">
         <div class="container">
-            <h2 class="section-title">Pesan Layanan</h2>
-            <p class="section-subtitle">Isi form di bawah untuk memesan layanan servis kendaraan Anda</p>
+            <div class="section-heading" data-reveal>
+                <p class="section-kicker">Suara Pelanggan</p>
+                <h2 class="section-title">Kepercayaan yang datang dari pengalaman langsung</h2>
+            </div>
 
-            <form class="booking-form" id="bookingForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Nama Lengkap *</label>
-                        <input type="text" id="name" name="name" required>
+            <div class="testimonial-track">
+                <article class="testimonial-card" data-reveal>
+                    <p class="testimonial-quote">"Servisnya rapi dan komunikatif. Sebelum ganti part selalu dikonfirmasi dulu. Mobil terasa jauh lebih nyaman setelah servis."</p>
+                    <div class="testimonial-author">
+                        <strong>Budi Santoso</strong>
+                        <span>Pemilik Toyota Avanza</span>
                     </div>
-                    <div class="form-group">
-                        <label for="phone">Nomor Telepon *</label>
-                        <input type="tel" id="phone" name="phone" required>
+                </article>
+
+                <article class="testimonial-card" data-reveal>
+                    <p class="testimonial-quote">"Saya suka karena estimasi biayanya jelas dari awal. Tidak ada biaya dadakan saat pengambilan mobil."</p>
+                    <div class="testimonial-author">
+                        <strong>Siti Nurhaliza</strong>
+                        <span>Pemilik Honda Jazz</span>
                     </div>
+                </article>
+
+                <article class="testimonial-card" data-reveal>
+                    <p class="testimonial-quote">"Waktunya on point, teknisinya detail, dan hasil wheel alignment-nya langsung terasa saat dipakai harian."</p>
+                    <div class="testimonial-author">
+                        <strong>Ahmad Wijaya</strong>
+                        <span>Pemilik Nissan X-Trail</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking section-shell">
+        <div class="container">
+            <div class="booking-layout">
+                <div class="booking-copy" data-reveal>
+                    <p class="section-kicker">Booking</p>
+                    <h2 class="section-title">Atur jadwal servis sesuai waktu luang Anda</h2>
+                    <p class="section-subtitle left">Isi form sekali, lalu tim kami follow up lewat WhatsApp untuk konfirmasi slot servis dan detail kendaraan Anda.</p>
+                    <ul class="booking-points">
+                        <li><i class="fas fa-circle-check"></i><span>Respon cepat pada jam operasional</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>Reminder jadwal sebelum hari H</span></li>
+                        <li><i class="fas fa-circle-check"></i><span>Bisa request kebutuhan khusus di kolom catatan</span></li>
+                    </ul>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="vehicle">Jenis Kendaraan *</label>
-                        <input type="text" id="vehicle" name="vehicle" placeholder="Contoh: Toyota Avanza 2020" required>
+                <form class="booking-form" id="bookingForm" data-reveal>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx atau +628xxxxxxxxxx" inputmode="numeric" autocomplete="tel" required>
+                            <small class="field-hint">Gunakan angka, contoh: 081234567890</small>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="service">Jenis Layanan *</label>
-                        <select id="service" name="service" required>
-                            <option value="">Pilih Layanan</option>
-                            <option value="servis-mesin">Servis Mesin</option>
-                            <option value="ganti-oli">Ganti Oli</option>
-                            <option value="perbaikan-rem">Perbaikan Rem</option>
-                            <option value="servis-ac">Servis AC</option>
-                            <option value="penggantian-ban">Penggantian Ban</option>
-                            <option value="inspeksi-umum">Inspeksi Umum</option>
-                            <option value="lainnya">Lainnya</option>
-                        </select>
-                    </div>
-                </div>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="date">Tanggal Servis *</label>
-                        <input type="date" id="date" name="date" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Jenis Kendaraan *</label>
+                            <input type="text" id="vehicle" name="vehicle" placeholder="Contoh: Toyota Avanza 2020" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Jenis Layanan *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Pilih Layanan</option>
+                                <option value="servis-berkala">Servis Berkala Mesin</option>
+                                <option value="ganti-oli">Ganti Oli & Filter</option>
+                                <option value="rem-kaki-kaki">Rem, Kaki-kaki, dan Ban</option>
+                                <option value="diagnostik">Diagnostik Scanner</option>
+                                <option value="lainnya">Layanan Lainnya</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="time">Waktu Servis *</label>
-                        <input type="time" id="time" name="time" required>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Tanggal Servis *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Waktu Servis *</label>
+                            <input type="time" id="time" name="time" min="08:00" max="17:59" required>
+                            <small class="field-hint">Jam operasional booking: 08:00 - 18:00</small>
+                        </div>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="notes">Catatan Tambahan</label>
-                    <textarea id="notes" name="notes" rows="4" placeholder="Jelaskan masalah atau kebutuhan khusus..."></textarea>
-                </div>
+                    <div class="form-group">
+                        <label for="notes">Catatan Tambahan</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Ceritakan keluhan atau kebutuhan khusus kendaraan Anda..."></textarea>
+                    </div>
 
-                <button type="submit" class="btn btn-primary btn-large">Pesan Sekarang</button>
-                <p class="form-note">* Bidang wajib diisi</p>
-            </form>
+                    <button type="submit" class="btn btn-primary btn-submit">Pesan Sekarang</button>
+                </form>
+            </div>
 
             <div class="booking-confirmation" id="bookingConfirmation" style="display: none;">
                 <i class="fas fa-check-circle"></i>
                 <h3>Pesanan Berhasil!</h3>
-                <p>Terima kasih telah memesan layanan kami. Tim kami akan menghubungi Anda segera.</p>
+                <p>Terima kasih. Tim ProAuto akan menghubungi Anda segera untuk konfirmasi jadwal.</p>
             </div>
         </div>
     </section>
 
-    <!-- Location Section -->
-    <section id="location" class="location">
+    <section id="location" class="location section-shell">
         <div class="container">
-            <h2 class="section-title">Lokasi Kami</h2>
-            
-            <div class="location-content">
-                <div class="location-info">
-                    <h3>ProAuto Bengkel</h3>
+            <div class="location-layout">
+                <div class="location-info" data-reveal>
+                    <p class="section-kicker">Lokasi</p>
+                    <h2 class="section-title">Kunjungi Workshop ProAuto</h2>
+                    <p class="section-subtitle left">Akses mudah, ruang tunggu nyaman, dan tim siap membantu Anda setiap hari kerja.</p>
+
                     <p>
                         <i class="fas fa-map-marker-alt"></i>
-                        Jl. Raya Otomotif No. 123<br>
-                        Jakarta Utara, DKI Jakarta 14250
+                        Jl. Raya Otomotif No. 123, Jakarta Utara, DKI Jakarta 14250
                     </p>
                     <p>
                         <i class="fas fa-phone"></i>
@@ -283,87 +362,95 @@
                     </p>
                     <p>
                         <i class="fas fa-clock"></i>
-                        Senin - Jumat: 08:00 - 18:00<br>
-                        Sabtu: 09:00 - 16:00<br>
-                        Minggu: Tutup
+                        Senin - Jumat 08:00 - 18:00, Sabtu 09:00 - 16:00, Minggu Tutup
                     </p>
                 </div>
-                
-                <div class="location-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5467890123456!2d110.4210!3d-7.0067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708a7d3b5b5b5f%3A0x5b5b5b5b5b5b5b5b!2sJl.%20Pemuda%20No.72%2C%20Pandansari%2C%20Semarang%20Tengah%2C%20Semarang!5e0!3m2!1sid!2sid!4v1708554000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="location-map" data-reveal>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.5467890123456!2d110.4210!3d-7.0067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708a7d3b5b5b5f%3A0x5b5b5b5b5b5b5b5b!2sJl.%20Pemuda%20No.72%2C%20Pandansari%2C%20Semarang%20Tengah%2C%20Semarang!5e0!3m2!1sid!2sid!4v1708554000000" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section section-shell">
         <div class="container">
-            <h2 class="section-title">Hubungi Kami</h2>
-            
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Telepon</h3>
-                    <p>+62-821-1234-5678</p>
-                    <a href="tel:+6282112345678" class="contact-link">Hubungi Sekarang</a>
+            <div class="contact-wrap" data-reveal>
+                <div class="contact-heading">
+                    <p class="section-kicker section-kicker-light">Kontak</p>
+                    <h2 class="section-title light">Butuh jawaban cepat? Hubungi channel favorit Anda.</h2>
                 </div>
 
-                <div class="contact-card">
-                    <i class="fas fa-comments"></i>
-                    <h3>WhatsApp</h3>
-                    <p>+62-821-1234-5678</p>
-                    <a href="https://wa.me/6282112345678" class="contact-link" target="_blank">Chat WhatsApp</a>
-                </div>
+                <div class="contact-grid">
+                    <a href="tel:+6282112345678" class="contact-card">
+                        <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                        <span class="contact-text">
+                            <strong>Telepon</strong>
+                            <em>+62-821-1234-5678</em>
+                        </span>
+                    </a>
 
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>info@proauto.com</p>
-                    <a href="mailto:info@proauto.com" class="contact-link">Kirim Email</a>
+                    <a href="https://wa.me/6282112345678" class="contact-card" target="_blank" rel="noopener">
+                        <span class="contact-icon"><i class="fab fa-whatsapp"></i></span>
+                        <span class="contact-text">
+                            <strong>WhatsApp</strong>
+                            <em>Chat langsung admin</em>
+                        </span>
+                    </a>
+
+                    <a href="mailto:info@proauto.com" class="contact-card">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <span class="contact-text">
+                            <strong>Email</strong>
+                            <em>info@proauto.com</em>
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>ProAuto</h4>
-                    <p>Bengkel profesional untuk perawatan kendaraan Anda dengan standar internasional.</p>
+                    <p>Bengkel profesional untuk perawatan kendaraan Anda dengan proses kerja yang rapi, cepat, dan transparan.</p>
                 </div>
+
                 <div class="footer-section">
                     <h4>Layanan</h4>
                     <ul>
-                        <li><a href="#services">Servis Mesin</a></li>
-                        <li><a href="#services">Ganti Oli</a></li>
-                        <li><a href="#services">Perbaikan Rem</a></li>
-                        <li><a href="#services">Servis AC</a></li>
+                        <li><a href="#services">Servis Berkala Mesin</a></li>
+                        <li><a href="#services">Ganti Oli & Filter</a></li>
+                        <li><a href="#services">Rem, Kaki-kaki, dan Ban</a></li>
+                        <li><a href="#services">Diagnostik Scanner</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Perusahaan</h4>
                     <ul>
                         <li><a href="#home">Beranda</a></li>
-                        <li><a href="#why-us">Tentang Kami</a></li>
+                        <li><a href="#why-us">Keunggulan</a></li>
                         <li><a href="#location">Lokasi</a></li>
                         <li><a href="#contact">Kontak</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
                     <h4>Ikuti Kami</h4>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 ProAuto. Semua hak dilindungi. Dibuat dengan <i class="fas fa-heart"></i> untuk Anda.</p>
+                <p>&copy; 2026 ProAuto. Semua hak dilindungi.</p>
             </div>
         </div>
     </footer>
